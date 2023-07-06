@@ -21,7 +21,5 @@ class HrEmployee(models.Model):
     work_email = fields.Char(data_mask="NULL")
     work_location = fields.Char(data_mask="NULL")
     notes = fields.Text(data_mask="NULL")
-    parent_id = fields.Many2one(data_mask="NULL")
-    coach_id = fields.Many2one(data_mask="NULL")
     job_id = fields.Many2one(data_mask="NULL")
     passport_id = fields.Char(data_mask="NULL")

@@ -10,4 +10,3 @@ class HrDepartment(models.Model):
 
     name = fields.Char(data_mask="'department_' || id::text")
     complete_name = fields.Char(data_mask="'department_' || id::text")
-    parent_id = fields.Many2one(data_mask="NULL")
